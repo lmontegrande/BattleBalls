@@ -1,0 +1,1013 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>nuitrack.net</name>
+    </assembly>
+    <members>
+        <member name="T:nuitrack.JointType">
+            <summary>
+            Joint type.
+            </summary>
+        </member>
+        <member name="P:nuitrack.Joint.Type">
+            <summary>
+            Gets the type.
+            </summary>
+            <value>
+            The type.
+            </value>
+        </member>
+        <member name="P:nuitrack.Joint.Confidence">
+            <summary>
+            Gets the confidence.
+            </summary>
+            <value>
+            The confidence.
+            </value>
+        </member>
+        <member name="P:nuitrack.Joint.Real">
+            <summary>
+            Gets the real coordinates of position.
+            </summary>
+            <value>
+            The real coordinates of position.
+            </value>
+        </member>
+        <member name="P:nuitrack.Joint.Proj">
+            <summary>
+            Gets the normalized projective coordinates of position.
+            </summary>
+            <value>
+            The normalized projective coordinates of position (x, y from 0.0 to 1.0, z is real).
+            </value>
+        </member>
+        <member name="P:nuitrack.Joint.Orient">
+            <summary>
+            Gets the orientation.
+            </summary>
+            <value>
+            The orientation.
+            </value>
+        </member>
+        <member name="P:nuitrack.Orientation.Matrix">
+            <summary>
+            Gets the matrix rotation.
+            </summary>
+            <value>
+            The matrix rotation.
+            </value>
+        </member>
+        <member name="P:nuitrack.OutputMode.FPS">
+            <summary>
+            Gets the FPS.
+            </summary>
+            <value>
+            The FPS.
+            </value>
+        </member>
+        <member name="P:nuitrack.OutputMode.XRes">
+            <summary>
+            Gets the X resolution.
+            </summary>
+            <value>
+            The X resolution.
+            </value>
+        </member>
+        <member name="P:nuitrack.OutputMode.YRes">
+            <summary>
+            Gets the Y resolution.
+            </summary>
+            <value>
+            The Y resolution.
+            </value>
+        </member>
+        <member name="P:nuitrack.OutputMode.HFOV">
+            <summary>
+            Gets the HFOV.
+            </summary>
+            <value>
+            The HFOV.
+            </value>
+        </member>
+        <member name="M:nuitrack.Skeleton.#ctor(System.Int32,nuitrack.Joint[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:nuitrack.Skeleton" /> class.
+            </summary>
+            <param name="id">
+            Identifier.
+            </param>
+            <param name="joints">
+            Joints.
+            </param>
+        </member>
+        <member name="P:nuitrack.Skeleton.ID">
+            <summary>
+            Gets the ID.
+            </summary>
+            <value>
+            The ID.
+            </value>
+        </member>
+        <member name="P:nuitrack.Skeleton.Joints">
+            <summary>
+            Gets the joints.
+            </summary>
+            <value>
+            The joints.
+            </value>
+        </member>
+        <member name="M:nuitrack.Skeleton.GetJoint(nuitrack.JointType)">
+            <summary>
+            Gets the joint.
+            </summary>
+            <returns>
+            The joint.
+            </returns>
+            <param name="jointType">
+            Joint type.
+            </param>
+        </member>
+        <member name="P:nuitrack.SkeletonData.NumUsers">
+            <summary>
+            Gets the number users.
+            </summary>
+            <value>
+            The number users.
+            </value>
+        </member>
+        <member name="P:nuitrack.SkeletonData.Skeletons">
+            <summary>
+            Gets the skeletons.
+            </summary>
+            <value>
+            The skeletons.
+            </value>
+        </member>
+        <member name="M:nuitrack.SkeletonData.GetSkeletonByID(System.Int32)">
+            <summary>
+            Gets the skeleton by ID.
+            </summary>
+            <returns>
+            The skeleton by ID.
+            </returns>
+            <param name="id">
+            Identifier.
+            </param>
+        </member>
+        <member name="P:nuitrack.User.ID">
+            <summary>
+            Gets the ID.
+            </summary>
+            <value>
+            The ID.
+            </value>
+        </member>
+        <member name="P:nuitrack.User.Proj">
+            <summary>
+            Gets the projective coordinates of center of mass.
+            </summary>
+            <value>
+            The projective coordinates.
+            </value>
+        </member>
+        <member name="P:nuitrack.User.Real">
+            <summary>
+            Gets the real coordinates of center of mass.
+            </summary>
+            <value>
+            The real coordinates.
+            </value>
+        </member>
+        <member name="P:nuitrack.User.Box">
+            <summary>
+            Gets the projective relative bounding box of user.
+            </summary>
+            <value>
+            Bounding box (4 floats from 0.0 to 1.0).
+            </value>
+        </member>
+        <member name="E:nuitrack.DepthSensor.OnUpdateEvent">
+            <summary>
+            Occurs when on update event.
+            </summary>
+        </member>
+        <member name="M:nuitrack.DepthSensor.Create">
+            <summary>
+            Initializes a new instance of the <see cref="T:nuitrack.DepthSensor" /> class.
+            </summary>
+        </member>
+        <member name="M:nuitrack.DepthSensor.GetOutputMode">
+            <summary>
+            Gets the sensor output mode.
+            </summary>
+            <returns>
+            The output mode.
+            </returns>
+        </member>
+        <member name="M:nuitrack.DepthSensor.IsMirror">
+            <summary>
+            Determines whether sensor is mirror.
+            </summary>
+            <returns>
+                <c>true</c> if this instance is mirror; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:nuitrack.DepthSensor.SetMirror(System.Boolean)">
+            <summary>
+            Sets the sensor mirror.
+            </summary>
+            <param name="mirror">
+            Mirror.
+            </param>
+        </member>
+        <member name="M:nuitrack.DepthSensor.GetDepthFrame">
+            <summary>
+            Gets the depth frame.
+            </summary>
+            <returns>
+            The depth frame.
+            </returns>
+        </member>
+        <member name="M:nuitrack.DepthSensor.ConvertProjToRealCoords(System.Int32,System.Int32,System.UInt16)">
+            <summary>
+            Converts the projective to real coordinates.
+            </summary>
+            <returns>
+            The projective to real coordinates.
+            </returns>
+            <param name="x">
+            X.
+            </param>
+            <param name="y">
+            Y.
+            </param>
+            <param name="depth">
+            Depth.
+            </param>
+        </member>
+        <member name="M:nuitrack.DepthSensor.ConvertProjToRealCoords(nuitrack.Vector3)">
+            <summary>
+            Converts the projective to real coordinates.
+            </summary>
+            <returns>
+            The projective to real coordinates.
+            </returns>
+            <param name="p">
+            P.
+            </param>
+        </member>
+        <member name="M:nuitrack.DepthSensor.ConvertRealToProjCoords(System.Single,System.Single,System.Single)">
+            <summary>
+            Converts the real to projective coordinates
+            </summary>
+            <returns>
+            The real to projective coordinates
+            </returns>
+            <param name="x">
+            X.
+            </param>
+            <param name="y">
+            Y.
+            </param>
+            <param name="z">
+            Z.
+            </param>
+        </member>
+        <member name="M:nuitrack.DepthSensor.ConvertRealToProjCoords(nuitrack.Vector3)">
+            <summary>
+            Converts the real to projective coordinates.
+            </summary>
+            <returns>
+            The real to projective coordinates.
+            </returns>
+            <param name="p">
+            P.
+            </param>
+        </member>
+        <member name="E:nuitrack.UserTracker.OnUpdateEvent">
+            <summary>
+            Occurs when on update event.
+            </summary>
+        </member>
+        <member name="E:nuitrack.UserTracker.OnNewUserEvent">
+            <summary>
+            Occurs when on new user event.
+            </summary>
+        </member>
+        <member name="E:nuitrack.UserTracker.OnLostUserEvent">
+            <summary>
+            Occurs when on lost user event.
+            </summary>
+        </member>
+        <member name="M:nuitrack.UserTracker.GetUserFrame">
+            <summary>
+            Gets the user frame.
+            </summary>
+            <returns>
+            </returns>
+            The user frame.</member>
+        <member name="E:nuitrack.SkeletonTracker.OnNewUserEvent">
+            <summary>
+            Occurs when on new user event.
+            </summary>
+        </member>
+        <member name="E:nuitrack.SkeletonTracker.OnLostUserEvent">
+            <summary>
+            Occurs when on lost user event.
+            </summary>
+        </member>
+        <member name="E:nuitrack.SkeletonTracker.OnSkeletonUpdateEvent">
+            <summary>
+            Occurs when on skeleton update event.
+            </summary>
+        </member>
+        <member name="M:nuitrack.SkeletonTracker.SetNumActiveUsers(System.Int32)">
+            <summary>
+            Sets the number active tracking users.
+            </summary>
+            <param name="numUsers">
+            Number users.
+            </param>
+        </member>
+        <member name="M:nuitrack.SkeletonTracker.IsAutoTracking">
+            <summary>
+            Determines whether is auto tracking.
+            </summary>
+            <returns>
+                <c>true</c> if is auto tracking; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:nuitrack.SkeletonTracker.SetAutoTracking(System.Boolean)">
+            <summary>
+            Sets the auto tracking.
+            </summary>
+            <param name="tracking">
+            Tracking.
+            </param>
+        </member>
+        <member name="M:nuitrack.SkeletonTracker.IsTracking(System.Int32)">
+            <summary>
+            Determines whether is tracking the specified userID.
+            </summary>
+            <returns>
+                <c>true</c> if is tracking the specified userID; otherwise, <c>false</c>.
+            </returns>
+            <param name="userID">
+            If set to <c>true</c> user I.
+            </param>
+        </member>
+        <member name="M:nuitrack.SkeletonTracker.StartTracking(System.Int32)">
+            <summary>
+            Starts the tracking user.
+            </summary>
+            <param name="userID">
+            User I.
+            </param>
+        </member>
+        <member name="M:nuitrack.SkeletonTracker.StopTracking(System.Int32)">
+            <summary>
+            Stops the tracking user.
+            </summary>
+            <param name="userID">
+            User I.
+            </param>
+        </member>
+        <member name="M:nuitrack.SkeletonTracker.GetSkeletonData">
+            <summary>
+            Gets the skeleton data.
+            </summary>
+            <returns>
+            The skeleton data.
+            </returns>
+        </member>
+        <member name="M:nuitrack.SkeletonTracker.GetProcessingTime">
+            <summary>
+            Gets the processing time.
+            </summary>
+            <returns>
+            The processing time.
+            </returns>
+        </member>
+        <member name="M:nuitrack.SkeletonTracker.Create">
+            <summary>
+            Factory method.
+            </summary>
+        </member>
+        <member name="E:nuitrack.HandTracker.OnUpdateEvent">
+            <summary>
+            Occurs on update.
+            </summary>
+        </member>
+        <member name="M:nuitrack.HandTracker.GetHandTrackerData">
+            <summary>
+            Gets the hand tracker data.
+            </summary>
+            <returns>The hand tracker data.</returns>
+        </member>
+        <member name="M:nuitrack.HandTracker.GetProcessingTime">
+            <summary>
+            Gets the average processing time.
+            </summary>
+            <returns>The average processing time in ms.</returns>
+        </member>
+        <member name="E:nuitrack.GestureRecognizer.OnNewGesturesEvent">
+            <summary>
+            Occurs when new gestures recognized.
+            </summary>
+        </member>
+        <member name="E:nuitrack.GestureRecognizer.OnUsersStateChangedEvent">
+            <summary>
+            Occurs when users state changed.
+            </summary>
+        </member>
+        <member name="E:nuitrack.GestureRecognizer.OnUpdateEvent">
+            <summary>
+            Occurs on update.
+            </summary>
+        </member>
+        <member name="M:nuitrack.GestureRecognizer.GetProcessingTime">
+            <summary>
+            Gets the average processing time.
+            </summary>
+            <returns>The average processing time in ms.</returns>
+        </member>
+        <member name="M:nuitrack.GestureRecognizer.SetControlGesturesStatus(System.Boolean)">
+            <summary>
+            Turn on/off control gestures (swipes/push)
+            </summary>
+            <param name="status">Turn on if set to <c>true</c> status. Turn off if set to <c>false</c></param>
+        </member>
+        <member name="E:nuitrack.IssueTracker.OnUpdateEvent">
+            <summary>
+            Occurs on update.
+            </summary>
+        </member>
+        <member name="M:nuitrack.IssueTracker.GetIssuesData">
+            <summary>
+            Gets the issues data.
+            </summary>
+            <returns>The issues data.</returns>
+        </member>
+        <member name="M:nuitrack.IssueTracker.GetProcessingTime">
+            <summary>
+            Gets the average processing time.
+            </summary>
+            <returns>The average processing time in ms.</returns>
+        </member>
+        <member name="P:nuitrack.Frame`1.Rows">
+            <summary>
+            Gets the rows frame.
+            </summary>
+            <value>
+            The rows frame.
+            </value>
+        </member>
+        <member name="P:nuitrack.Frame`1.Cols">
+            <summary>
+            Gets the cols frame.
+            </summary>
+            <value>
+            The cols frame.
+            </value>
+        </member>
+        <member name="P:nuitrack.Frame`1.ID">
+            <summary>
+            Gets the ID frame.
+            </summary>
+            <value>
+            The ID frame.
+            </value>
+        </member>
+        <member name="P:nuitrack.Frame`1.Timestamp">
+            <summary>
+            Gets the timestamp frame.
+            </summary>
+            <value>
+            The timestamp frame.
+            </value>
+        </member>
+        <member name="P:nuitrack.Frame`1.Item(System.Int32,System.Int32)">
+            <summary>
+            Gets the <see cref="!:nuitrack.Frame`1" /> with the specified row col.
+            </summary>
+            <param name="row">
+            Row.
+            </param>
+            <param name="col">
+            Col.
+            </param>
+        </member>
+        <member name="P:nuitrack.Frame`1.Item(System.Int32)">
+            <summary>
+            Gets the <see cref="!:nuitrack.Frame`1" /> with the specified i.
+            </summary>
+            <param name="i">
+            I.
+            </param>
+        </member>
+        <member name="M:nuitrack.Frame`1.GetAt(System.Int32,System.Int32)">
+            <summary>
+            Gets at row and col.
+            </summary>
+            <returns>
+            The <see cref="!:`0" />.
+            </returns>
+            <param name="row">
+            Row.
+            </param>
+            <param name="col">
+            Col.
+            </param>
+        </member>
+        <member name="M:nuitrack.Frame`1.GetAt(System.Int32)">
+            <summary>
+            Gets at i.
+            </summary>
+            <returns>
+            The <see cref="!:`0" />.
+            </returns>
+            <param name="i">
+            I.
+            </param>
+        </member>
+        <member name="P:nuitrack.Frame`1.Data">
+            <summary>
+            Gets the data.
+            </summary>
+            <value>
+            The data.
+            </value>
+        </member>
+        <member name="P:nuitrack.Module.Ptr">
+            <summary>
+            Gets the native ptr.
+            </summary>
+            <value>
+            The native ptr.
+            </value>
+        </member>
+        <member name="M:nuitrack.NuitrackImpl.Init">
+            <summary>
+            Initialize Nuitrack.
+            </summary>
+        </member>
+        <member name="M:nuitrack.NuitrackImpl.Run">
+            <summary>
+            Run all Nuitrack modules.
+            </summary>
+        </member>
+        <member name="M:nuitrack.NuitrackImpl.Update">
+            <summary>
+            Non-blocking update, data not synchronized.
+            Call all new modules events.
+            </summary>
+        </member>
+        <member name="M:nuitrack.NuitrackImpl.Update(nuitrack.Module)">
+            <summary>
+            Non-blocking update, data synchronized by module.
+            </summary>
+            <param name="module">
+            Nuitrack module.
+            </param>
+        </member>
+        <member name="M:nuitrack.NuitrackImpl.WaitUpdate(nuitrack.Module)">
+            <summary>
+            Blocking update, waits new data, data synchronized by module.
+            </summary>
+            <param name="module">
+            Nuitrack module.
+            </param>
+        </member>
+        <member name="M:nuitrack.NuitrackImpl.Release">
+            <summary>
+            Release Nuitrack.
+            </summary>
+        </member>
+        <member name="M:nuitrack.NuitrackImpl.SetConfigValue(System.String,System.String)">
+            <summary>
+            Set config value specified by key
+            </summary>
+            <param name="key">Key.</param>
+            <param name="value">Value.</param>
+        </member>
+        <member name="M:nuitrack.NuitrackImpl.GetConfigValue(System.String)">
+            <summary>
+            Get config value specified by key
+            </summary>
+            <param name="key">Key.</param>
+            <param name="value">Value.</param>
+        </member>
+        <member name="P:nuitrack.UserFrame.NumUsers">
+            <summary>
+            Gets the number users.
+            </summary>
+            <value>
+            The number users.
+            </value>
+        </member>
+        <member name="P:nuitrack.UserFrame.Users">
+            <summary>
+            Gets the users.
+            </summary>
+            <value>
+            The users.
+            </value>
+        </member>
+        <member name="M:nuitrack.UserFrame.GetUserByID(System.Int32)">
+            <summary>
+            Gets the user by ID.
+            </summary>
+            <returns>
+            The user by ID or empty user.
+            </returns>
+            <param name="id">
+            Identifier.
+            </param>
+        </member>
+        <member name="P:nuitrack.UserFrame.Floor">
+            <summary>
+            Gets the floor.
+            </summary>
+            <value>
+            The floor.
+            </value>
+        </member>
+        <member name="P:nuitrack.UserFrame.FloorNormal">
+            <summary>
+            Gets the floor normal.
+            </summary>
+            <value>
+            The floor normal.
+            </value>
+        </member>
+        <member name="P:nuitrack.Gesture.UserID">
+            <summary>
+            Gets the userID.
+            </summary>
+            <value>The userID.</value>
+        </member>
+        <member name="P:nuitrack.Gesture.Type">
+            <summary>
+            Gets the gesture type.
+            </summary>
+            <value>The gesture type.</value>
+        </member>
+        <member name="P:nuitrack.GestureData.NumGestures">
+            <summary>
+            Gets the number gestures.
+            </summary>
+            <value>The number gestures.</value>
+        </member>
+        <member name="P:nuitrack.GestureData.Timestamp">
+            <summary>
+            Gets the timestamp.
+            </summary>
+            <value>The timestamp.</value>
+        </member>
+        <member name="P:nuitrack.GestureData.Gestures">
+            <summary>
+            Gets the gestures.
+            </summary>
+            <value>The gestures.</value>
+        </member>
+        <member name="P:nuitrack.UserState.UserId">
+            <summary>
+            Gets the user identifier.
+            </summary>
+            <value>The user identifier.</value>
+        </member>
+        <member name="P:nuitrack.UserState.UserStateType">
+            <summary>
+            Gets the type of the user state.
+            </summary>
+            <value>The type of the user state.</value>
+        </member>
+        <member name="P:nuitrack.UserStateData.NumUserStates">
+            <summary>
+            Gets the number users state changes.
+            </summary>
+            <value>The number users state changes.</value>
+        </member>
+        <member name="P:nuitrack.UserStateData.Timestamp">
+            <summary>
+            Gets the timestamp.
+            </summary>
+            <value>The timestamp.</value>
+        </member>
+        <member name="P:nuitrack.UserStateData.UserStates">
+            <summary>
+            Gets the users state changes.
+            </summary>
+            <value>The users state changes.</value>
+        </member>
+        <member name="P:nuitrack.GestureState.Type">
+            <summary>
+            Gets the gesture type.
+            </summary>
+            <value>The gesture type.</value>
+        </member>
+        <member name="P:nuitrack.GestureState.Progress">
+            <summary>
+            Gets the progress.
+            </summary>
+            <value>The progress.</value>
+        </member>
+        <member name="P:nuitrack.UserGesturesStateData.NumUsersGesturesStates">
+            <summary>
+            Gets the number of users
+            </summary>
+            <value>The number of users.</value>
+        </member>
+        <member name="P:nuitrack.UserGesturesStateData.Timestamp">
+            <summary>
+            Gets the timestamp.
+            </summary>
+            <value>The timestamp.</value>
+        </member>
+        <member name="P:nuitrack.UserGesturesStateData.UserGesturesStates">
+            <summary>
+            Gets the users state changes.
+            </summary>
+            <value>The users state changes.</value>
+        </member>
+        <member name="P:nuitrack.UserHands.UserId">
+            <summary>
+            Gets the user identifier.
+            </summary>
+            <value>The user identifier.</value>
+        </member>
+        <member name="P:nuitrack.UserHands.LeftHand">
+            <summary>
+            Gets the left hand.
+            </summary>
+            <value>The left hand.</value>
+        </member>
+        <member name="P:nuitrack.UserHands.RightHand">
+            <summary>
+            Gets the right hand.
+            </summary>
+            <value>The right hand.</value>
+        </member>
+        <member name="P:nuitrack.HandTrackerData.NumUsers">
+            <summary>
+            Gets the users number.
+            </summary>
+            <value>The users number.</value>
+        </member>
+        <member name="P:nuitrack.HandTrackerData.UsersHands">
+            <summary>
+            Gets the users hands.
+            </summary>
+            <value>The users hands.</value>
+        </member>
+        <member name="M:nuitrack.HandTrackerData.GetUserHandsByID(System.Int32)">
+            <summary>
+            Gets the user hands by Id.
+            </summary>
+            <returns>The user hands by Id.</returns>
+            <param name="id">Identifier.</param>
+        </member>
+        <member name="P:nuitrack.HandTrackerData.Timestamp">
+            <summary>
+            Gets the timestamp.
+            </summary>
+            <value>The timestamp.</value>
+        </member>
+        <member name="M:nuitrack.NativeImporter.nuitrack_CreateGestureRecognizer(System.IntPtr@)">
+            		 * Gesture Recognizer</member>
+        <member name="T:nuitrack.NativeImporter.OnNewGesturesCallback">
+            		 * New gestures data</member>
+        <member name="T:nuitrack.NativeImporter.OnUsersStateChangedCallback">
+            		 * Users state change data</member>
+        <member name="M:nuitrack.NativeDepthFrame.#ctor(System.IntPtr)">
+            <summary>
+            Initializes a new instance of the <see cref="T:nuitrack.DepthFrame" /> class.
+            </summary>
+            <param name="ptr">
+            Ptr.
+            </param>
+        </member>
+        <member name="M:nuitrack.NativeUserTracker.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:nuitrack.UserTracker" /> class.
+            </summary>
+        </member>
+        <member name="M:nuitrack.NativeUserTracker.Finalize">
+            <summary>
+            Releases unmanaged resources and performs other cleanup operations before the <see cref="T:nuitrack.UserTracker" />
+            is reclaimed by garbage collection.
+            </summary>
+        </member>
+        <member name="M:nuitrack.NativeUserTracker.GetProcessingTime">
+            <summary>
+            Gets the processing time.
+            </summary>
+            <returns>
+            The processing time.
+            </returns>
+        </member>
+        <member name="M:nuitrack.NativeSkeletonData.Finalize">
+            <summary>
+            Releases unmanaged resources and performs other cleanup operations before the <see cref="T:nuitrack.SkeletonData" />
+            is reclaimed by garbage collection.
+            </summary>
+        </member>
+        <member name="M:nuitrack.NativeSkeletonTracker.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:nuitrack.SkeletonTracker" /> class.
+            </summary>
+        </member>
+        <member name="M:nuitrack.NativeSkeletonTracker.Finalize">
+            <summary>
+            Releases unmanaged resources and performs other cleanup operations before the
+            <see cref="T:nuitrack.SkeletonTracker" /> is reclaimed by garbage collection.
+            </summary>
+        </member>
+        <member name="M:nuitrack.NativeSkeletonTracker.SetNumActiveUsers(System.Int32)">
+            <summary>
+            Sets the number active tracking users.
+            </summary>
+            <param name="numUsers">
+            Number users.
+            </param>
+        </member>
+        <member name="M:nuitrack.NativeSkeletonTracker.IsAutoTracking">
+            <summary>
+            Determines whether is auto tracking.
+            </summary>
+            <returns>
+                <c>true</c> if is auto tracking; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:nuitrack.NativeSkeletonTracker.SetAutoTracking(System.Boolean)">
+            <summary>
+            Sets the auto tracking.
+            </summary>
+            <param name="tracking">
+            Tracking.
+            </param>
+        </member>
+        <member name="M:nuitrack.NativeSkeletonTracker.IsTracking(System.Int32)">
+            <summary>
+            Determines whether is tracking the specified userID.
+            </summary>
+            <returns>
+                <c>true</c> if is tracking the specified userID; otherwise, <c>false</c>.
+            </returns>
+            <param name="userID">
+            If set to <c>true</c> user I.
+            </param>
+        </member>
+        <member name="M:nuitrack.NativeSkeletonTracker.StartTracking(System.Int32)">
+            <summary>
+            Starts the tracking user.
+            </summary>
+            <param name="userID">
+            User I.
+            </param>
+        </member>
+        <member name="M:nuitrack.NativeSkeletonTracker.StopTracking(System.Int32)">
+            <summary>
+            Stops the tracking user.
+            </summary>
+            <param name="userID">
+            User I.
+            </param>
+        </member>
+        <member name="M:nuitrack.NativeSkeletonTracker.GetProcessingTime">
+            <summary>
+            Gets the processing time.
+            </summary>
+            <returns>
+            The processing time.
+            </returns>
+        </member>
+        <member name="M:nuitrack.NativeHandTracker.#ctor">
+            <summary>
+            Initializes a new instance of the HandTracker class.
+            </summary>
+        </member>
+        <member name="M:nuitrack.NativeHandTracker.Finalize">
+            <summary>
+            Releases unmanaged resources and performs other cleanup operations ///
+            before the HandTracker reclaimed by garbage collection.
+            </summary>
+        </member>
+        <member name="M:nuitrack.NativeHandTracker.GetProcessingTime">
+            <summary>
+            Gets the average processing time.
+            </summary>
+            <returns>The average processing time in ms.</returns>
+        </member>
+        <member name="M:nuitrack.NativeGestureRecognizer.#ctor">
+            <summary>
+            Initializes a new instance of the GestureRecognizer class.
+            </summary>
+        </member>
+        <member name="M:nuitrack.NativeGestureRecognizer.Finalize">
+            <summary>
+            Releases unmanaged resources and performs other cleanup operations before the
+            GestureRecognizer is reclaimed by garbage collection.
+            </summary>
+        </member>
+        <member name="M:nuitrack.NativeGestureRecognizer.GetProcessingTime">
+            <summary>
+            Gets the average processing time.
+            </summary>
+            <returns>The average processing time in ms.</returns>
+        </member>
+        <member name="M:nuitrack.NativeGestureRecognizer.SetControlGesturesStatus(System.Boolean)">
+            <summary>
+            Turn on/off control gestures (swipes/push)
+            </summary>
+            <param name="status">Turn on if set to <c>true</c> status. Turn off if set to <c>false</c></param>
+        </member>
+        <member name="M:nuitrack.NativeIssueTracker.#ctor">
+            <summary>
+            Initializes a new instance of the HandTracker class.
+            </summary>
+        </member>
+        <member name="M:nuitrack.NativeIssueTracker.Finalize">
+            <summary>
+            Releases unmanaged resources and performs other cleanup operations ///
+            before the HandTracker reclaimed by garbage collection.
+            </summary>
+        </member>
+        <member name="M:nuitrack.NativeIssueTracker.GetProcessingTime">
+            <summary>
+            Gets the average processing time.
+            </summary>
+            <returns>The average processing time in ms.</returns>
+        </member>
+        <member name="M:nuitrack.WirelessSkeletonTracker.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:nuitrack.SkeletonTracker" /> class.
+            </summary>
+        </member>
+        <member name="M:nuitrack.WirelessSkeletonTracker.Finalize">
+            <summary>
+            Releases unmanaged resources and performs other cleanup operations before the
+            <see cref="T:nuitrack.SkeletonTracker" /> is reclaimed by garbage collection.
+            </summary>
+        </member>
+        <member name="M:nuitrack.WirelessSkeletonTracker.SetNumActiveUsers(System.Int32)">
+            <summary>
+            Sets the number active tracking users.
+            </summary>
+            <param name="numUsers">
+            Number users.
+            </param>
+        </member>
+        <member name="M:nuitrack.WirelessSkeletonTracker.IsAutoTracking">
+            <summary>
+            Determines whether is auto tracking.
+            </summary>
+            <returns>
+                <c>true</c> if is auto tracking; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:nuitrack.WirelessSkeletonTracker.SetAutoTracking(System.Boolean)">
+            <summary>
+            Sets the auto tracking.
+            </summary>
+            <param name="tracking">
+            Tracking.
+            </param>
+        </member>
+        <member name="M:nuitrack.WirelessSkeletonTracker.IsTracking(System.Int32)">
+            <summary>
+            Determines whether is tracking the specified userID.
+            </summary>
+            <returns>
+                <c>true</c> if is tracking the specified userID; otherwise, <c>false</c>.
+            </returns>
+            <param name="userID">
+            If set to <c>true</c> user I.
+            </param>
+        </member>
+        <member name="M:nuitrack.WirelessSkeletonTracker.StartTracking(System.Int32)">
+            <summary>
+            Starts the tracking user.
+            </summary>
+            <param name="userID">
+            User I.
+            </param>
+        </member>
+        <member name="M:nuitrack.WirelessSkeletonTracker.StopTracking(System.Int32)">
+            <summary>
+            Stops the tracking user.
+            </summary>
+            <param name="userID">
+            User I.
+            </param>
+        </member>
+        <member name="M:nuitrack.WirelessSkeletonTracker.GetProcessingTime">
+            <summary>
+            Gets the processing time.
+            </summary>
+            <returns>
+            The processing time.
+            </returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,164 @@
+fileFormatVersion: 2
+guid: 48ac68ca18041244eacbe26b66375e6d
+timeCreated: 1482368524
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: cube17
+    100002: cube18
+    100004: cube19
+    100006: cube20
+    100008: cube21
+    100010: cube22
+    100012: //RootNode
+    100014: cube59
+    100016: cube60
+    100018: cube61
+    100020: cube62
+    100022: cube63
+    100024: cube64
+    100026: cube65
+    100028: cube66
+    100030: cube67
+    100032: cube68
+    100034: cube69
+    100036: cube70
+    400000: cube17
+    400002: cube18
+    400004: cube19
+    400006: cube20
+    400008: cube21
+    400010: cube22
+    400012: //RootNode
+    400014: cube59
+    400016: cube60
+    400018: cube61
+    400020: cube62
+    400022: cube63
+    400024: cube64
+    400026: cube65
+    400028: cube66
+    400030: cube67
+    400032: cube68
+    400034: cube69
+    400036: cube70
+    2300000: cube17
+    2300002: cube18
+    2300004: cube19
+    2300006: cube20
+    2300008: cube21
+    2300010: cube22
+    2300012: cube59
+    2300014: cube60
+    2300016: cube61
+    2300018: cube62
+    2300020: cube63
+    2300022: cube64
+    2300024: cube65
+    2300026: cube66
+    2300028: cube67
+    2300030: cube68
+    2300032: cube69
+    2300034: cube70
+    3300000: cube17
+    3300002: cube18
+    3300004: cube19
+    3300006: cube20
+    3300008: cube21
+    3300010: cube22
+    3300012: cube59
+    3300014: cube60
+    3300016: cube61
+    3300018: cube62
+    3300020: cube63
+    3300022: cube64
+    3300024: cube65
+    3300026: cube66
+    3300028: cube67
+    3300030: cube68
+    3300032: cube69
+    3300034: cube70
+    4300000: cube17
+    4300002: cube18
+    4300004: cube19
+    4300006: cube20
+    4300008: cube21
+    4300010: cube22
+    4300012: cube59
+    4300014: cube60
+    4300016: cube61
+    4300018: cube62
+    4300020: cube63
+    4300022: cube64
+    4300024: cube65
+    4300026: cube66
+    4300028: cube67
+    4300030: cube68
+    4300032: cube69
+    4300034: cube70
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
